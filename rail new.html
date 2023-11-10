@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Reservation System</title>
+    <link rel="stylesheet" href="rail new.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="12501-NOAIN2-transformed-removebg-preview.png" alt="MyRailYatra.com">
+            <div id="logoname">Yatra</div>
+        </div>
+        <ul>
+            <li class="item"><a href="#Home">Home</a></li>
+            <li class="item"><a href="#ticket-section">Train</a></li>
+            <li class="item"><a href="#services-container">Flight</a></li>
+            <li class="item"><a href="#contact">Bus</a></li>
+            <li class="item"><a href="#holiday">Holiday</a></li>
+            <li class="item"><a href="#cabs">Cabs</a></li>
+            <li class="item"><a href="#activities">Activities</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">More</button>
+                <div class="dropdown-content">
+                    <a href="#">Charters</a>
+                    <a href="#">Cruise</a>
+                    <a href="#">Gift Card</a>
+                    <a href="#">Offers</a>
+                    <a href="#">Agent Login</a>
+                </div>
+            </div>
+        </ul>
+        <div class="button">
+            <button class="btn">Login</button>
+            <button class="btn">Register</button>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <h3>Video Slider 1</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, non? Recusandae dolores culpa
+                        dicta aliquid. Quas accusamus obcaecati, architecto voluptatem eaque ea, saepe optio ducimus vel
+                        omnis repellendus autem laborum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+                        possimus mollitia repudiandae itaque, in corporis esse at illum qui ratione assumenda doloremque
+                        exercitationem beatae necessitatibus cumque enim alias officiis fugit.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <!-- <video src="X2Download.app-India In 4K - Incredible Scenes Of India | Scenic Relaxation Film.mp4" muted autoplay loop></video> -->
+                <video src="landing_-_32945 (Original).mp4" muted autoplay loop></video>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>Video Slider 4</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, non? Recusandae dolores culpa
+                        dicta aliquid. Quas accusamus obcaecati, architecto voluptatem eaque ea, saepe optio ducimus vel
+                        omnis repellendus autem laborum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
+                        voluptatem eveniet. Dolorum aut fugit sapiente consectetur voluptate amet porro neque culpa.
+                        Inventore, cum neque. Accusamus mollitia quia fuga quam inventore.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <!-- <video src="X2Download.app-India In 4K - Incredible Scenes Of India | Scenic Relaxation Film.mp4" muted autoplay loop></video> -->
+                <video src="istockphoto-1417829993-640_adpp_is.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>Video Slider 2</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, non? Recusandae dolores culpa
+                        dicta aliquid. Quas accusamus obcaecati, architecto voluptatem eaque ea, saepe optio ducimus vel
+                        omnis repellendus autem laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                        nostrum debitis excepturi deserunt totam repellat quos reprehenderit ut fuga autem, corrupti
+                        doloribus sit molestias illo iure voluptatem placeat consectetur atque!</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <!-- <video src="X2Download.app-India In 4K - Incredible Scenes Of India | Scenic Relaxation Film.mp4" muted autoplay loop></video> -->
+                <video src="tube_-_9005 (720p).mp4" muted autoplay loop></video>
+            </div>
+        </div>
+
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>Video Slider 4</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, non? Recusandae dolores culpa
+                        dicta aliquid. Quas accusamus obcaecati, architecto voluptatem eaque ea, saepe optio ducimus vel
+                        omnis repellendus autem laborum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                        ipsum pariatur labore? In, tenetur enim. Porro, accusamus reiciendis doloribus aliquid dolorum
+                        explicabo inventore odio molestiae. Minima praesentium sint eius nam.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <!-- <video src="X2Download.app-India In 4K - Incredible Scenes Of India | Scenic Relaxation Film.mp4" muted autoplay loop></video> -->
+                <video src="168811 (1440p).mp4" muted autoplay loop></video>
+            </div>
+        </div>
+        <div id="next" onclick="next()"> > </div>
+        <div id="prev" onclick="prev()"> < </div>
+        </div>
+        <script>
+            let slides = document.querySelectorAll('.slide-container')
+            let index = 0;
+
+            function next() {
+                slides[index].classList.remove('active');
+                index = (index + 1) % slides.length;
+                slides[index].classList.add('active');
+
+            }
+
+            function prev() {
+                slides[index].classList.remove('active');
+                index = (index - 1 + slides.length) % slides.length;
+                slides[index].classList.add('active');
+            }
+
+        </script>
+       
+
+</body>
+
+</html>
