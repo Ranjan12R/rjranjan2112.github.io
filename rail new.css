@@ -38,6 +38,7 @@ html{
 }
 #navbar ul {
     display: flex;
+    align-items: center;
     font-family: 'Baloo Bhai';
 }
 
